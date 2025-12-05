@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Claude Code Reference
+Comment=Searchable reference for Claude Code commands, shortcuts, and keyboard bindings
+Exec=/home/daniel/claude-code-reference/launch.sh
+Icon=/home/daniel/claude-code-reference/icon.svg
+Terminal=false
+Categories=Development;Utility;Documentation;
+Keywords=claude;code;reference;shortcuts;commands;terminal;ai;
+StartupNotify=true
+StartupWMClass=claude-code-reference
